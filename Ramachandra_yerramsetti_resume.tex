@@ -1,0 +1,197 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://rcyerramsetti.com}{\Large Ramachandra Yerramsetti}} & Email : \href{mailto:rcyerramsetti@protonmail.com}{rcyerramsetti@protonmail.com}\\
+  \href{https://github.com/ramchandra3101}{GitHub/ramchandra3101} & \href{https://rcyerramsetti.com}{https://rcyerramsetti.com}
+\\
+  \href{https://www.linkedin.com/in/ramachandra-yerramsetti-1b2265125/}{Linkedin/Ramachandra Yerramsetti} &Mobile : \href{tel:+19592320757}{+1-959-232-0757} \\ \end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Connecticut}{Storrs, CT}
+      {Master of Engineering in Computer Science;  GPA: 3.4}{Aug. 2023 -- Dec. 2024}
+    \resumeSubheading
+      {Koneru Lakshmaiah (Deemed to be) University}{Vijayawada India}
+      {Bachelor of Engineering in Electrical and Electronics;  GPA: 3.5 (8.78/10.0)}{Aug. 2015-- July. 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Tata Consultancy Services}{Hyderabad, India}
+      {Software Engineer II}{Jun 2022 - July 2023}
+      \resumeItemListStart
+        \resumeItem{Monitoring System}
+          {Architected an advanced health check monitoring system for over 30 SAP production environments, reducing health monitoring time by 75\%.}
+        \resumeItem{Performance Tuning}
+          {Fine-tuned system efficiency by addressing performance bottlenecks, achieving a marked decrease in execution time for over 100 background processes.}
+        \resumeItem{Cybersecurity}
+          {Implemented an algorithm for detecting components at risk of cyber attacks, enhancing system security by identifying vulnerabilities.}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Cognizant Technology Solutions}{Chennai, India}
+      {Software Engineer I}{Jul 2019 - May 2022}
+      \resumeItemListStart
+        \resumeItem{Changes Movement}
+          {Developed a streamlined process for the efficient transfer of change objects across development, testing, QA, and production environments, enhancing project agility and deployment speed by 40\%.}
+        \resumeItem{System installation}
+          {Orchestrated the setup of a print server on Linux for Merck Animal Health's new Amsterdam facility, successfully integrating over 100 printers with the SAP platform through a partnership with Hewlett Packard, ensuring seamless operations.}
+        \resumeItem{Bussiness objects}
+          {Designed and implemented a customized SAP Business Objects system to meet specific client requirements, enhancing data reporting and analysis capabilities.}
+                       \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{Hyderabad, India}
+      {Software Engineer Intern}{Summer 2017 and 2018}
+      \resumeItemListStart
+        \resumeItem{Internet of Things}
+          {Developed a Python script on a Raspberry PI platform to ensure 100\% data retrieval from various sensors.}
+        \resumeItem{Cloud Dashboard}
+          {Created a dashboard on the cloud for real-time data integration, processing, and analysis resulting 50\% reduction in storage costs.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  \resumeSubItem{\href{https://github.com/ramchandra3101/Cyberinfrastructure-competition}{Cyberinfrastructure Competition-1st Prize}}
+      {Achieved first place in the Cyberinfrastructure Competition with a cross-disciplinary team for predicting Citibike usage in Manhattan using a GRU model and GIS analysis.}
+    \resumeSubItem{\href{https://github.com/ramchandra3101/NFLoutcomes-prediction}{NFL Outcome Prediction}}
+          {Crafted a Python ML model for NFL predictions, enhancing accuracy by 40\% with enriched player data from two decades.}
+    \resumeSubItem{KLAD(E-commerce clothing website)}
+      {Built a MERN stack-based e-commerce website for the apparel startup KLAD, enhancing the online shopping experience.}
+    \resumeSubItem{Student Mental Health Analysis}
+      {Led a project to predict UConn students' mental health outcomes based on social media usage and facilitating support services.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+     \resumeSubItem{\textbf{Languages}}{Python, Javascript, NoSQL, Java}\\
+     \resumeSubItem{\textbf{Web Developemnt}}{React, Node,HTML/CSS}\\
+     \resumeSubItem{\textbf{Version Control}}{Git, GitHub}\\
+    % \resumeSubItem{\textbf{Containerization}}{Docker, Kubernetes}\\
+     \resumeSubItem{\textbf{Python Libraries}}{Pandas, Scikit-Learn, NumPy, Tensorflow}\\
+     \resumeSubItem{\textbf{Database \& Cloud}}{MySQL, Oracle, MongoDB}
+  \resumeSubHeadingListEnd
+%--------Leadership------------
+\section{Leadership}
+\resumeSubHeadingListStart
+\resumeSubItem{Smart India Hackathon 2017}
+      {Managed a team of 25, mentoring in designing and drafting requirements for the national-level hackathon(Student's Voice) at KL University.}
+
+ \resumeSubHeadingListEnd
+ 
+%-------------------------------------------
+\end{document}
