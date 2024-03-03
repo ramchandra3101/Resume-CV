@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -62,6 +62,8 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -69,6 +71,16 @@
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
+
+\newcommand{\resumeSubheadingTop}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
 
 \newcommand{\resumeSubSubheading}[2]{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -102,12 +114,15 @@
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeSubheadingTop
       {University of Connecticut}{Storrs, CT}
-      {Master of Engineering in Computer Science;  GPA: 3.4}{Aug. 2023 -- Dec. 2024}
-    \resumeSubheading
+      {Master of Engineering in Computer Science}{Aug. 2023 -- Dec. 2024}
+      {\textbf{Coursework:} Algorithms \& Complexity, Data Mining, Big Data Analytics}{GPA: 3.5}
+    \resumeSubheadingTop
       {Koneru Lakshmaiah (Deemed to be) University}{Vijayawada India}
-      {Bachelor of Engineering in Electrical and Electronics;  GPA: 3.5 (8.78/10.0)}{Aug. 2015-- Jun. 2019}
+      {Bachelor of Engineering in Electrical and Electronics}{Aug. 2015-- Jun. 2019}
+     % {\textbf{Coursework:} Object-Oriented Programming(Java), C  \& Data Structures}{GPA:3.4(8.8/10)}
+       {\textbf{Coursework:} Power Electronics for Renewable Energy , Microprocessors and Microcontrollers }{GPA:3.4(8.8/10)}
   \resumeSubHeadingListEnd
 
 
@@ -117,14 +132,27 @@
 
     \resumeSubheading
       {Tata Consultancy Services}{Hyderabad, India}
-      {Software Engineer II}{Jun. 2022 - July. 2023}
+      {Software Engineer}{Jun. 2022 - July. 2023}
       \resumeItemListStart
-        \resumeItem{Monitoring System}
-          {Architected an advanced health check monitoring system for over 30 SAP production environments, reducing health monitoring time by 75\%.}
-        \resumeItem{Performance Tuning}
-          {Fine-tuned system efficiency by addressing performance bottlenecks, achieving a marked decrease in execution time for over 100 background processes.}
-        \resumeItem{Cybersecurity}
-          {Implemented an algorithm for detecting components at risk of cyber attacks, enhancing system security by identifying vulnerabilities.}
+              
+        \resumeItem{Reusable Components}
+        {Increased website speed and performance by 40\% by developing reusable components with React for 10+ company websites.}
+        
+        \resumeItem{API}
+        {Developed app integrations using REST and SOAP APIs for features like Google Maps, social media logins, payment processors, and other services.}
+        
+        \resumeItem{Web Development}
+        {Achieved 100\% client satisfaction by designing website structures and page layouts that precisely met user requirements.}
+
+         \resumeItem{Single page app}
+         {Transformed a multi-page user experience into a single-page application (SPA), boosting customer engagement by 10\% through seamless navigation and reduced loading times.}
+       
+     %   \resumeItem{ReactJS}
+       %   {Translated designs \& wireframes into high quality code and wrote application inetrface code via javascript following ReactJS workflows}
+          
+       
+        
+       
       \resumeItemListEnd
       
 % --------Multiple Positions Heading------------
@@ -139,25 +167,37 @@
 
     \resumeSubheading
       {Cognizant Technology Solutions}{Chennai, India}
-      {Software Engineer I}{Jul. 2019 - May. 2022}
+      {Software Engineer}{Jul. 2019 - May. 2022}
       \resumeItemListStart
+      \resumeItem{Monitoring System}
+         {Achieved 75\% reduction in monitoring time by architecting an advanced Python-based health check monitoring system for over 30 SAP production environments.}
+        
+         
+ 
+         \resumeItem{Performance Tuning}
+         {Fine-tuned system efficiency by addressing performance bottlenecks, achieving a marked decrease in execution time for over 100 background processes.}        
+        
+         \resumeItem{Cybersecurity}
+       {Implemented an algorithm for detecting components at risk of cyber attacks, enhancing system security by identifying vulnerabilities.}
+
         \resumeItem{Changes Movement}
           {Developed a streamlined process for the efficient transfer of change objects across development, testing, QA, and production environments, enhancing project agility and deployment speed by 40\%.}
         \resumeItem{System installation}
-          {Launched a Linux-based print server for Merck Animal Health's Amsterdam site, seamlessly integrating over 100 printers with SAP in collaboration with Hewlett Packard.}
-        \resumeItem{Bussiness objects}
-          {Designed and implemented a customized SAP Business Objects system to meet specific client requirements, enhancing data reporting and analysis capabilities.}
+         {Launched a Linux-based print server for Merck Animal Health's Amsterdam site, seamlessly integrating over 100 printers with SAP in collaboration with Hewlett Packard.}
+     %  \resumeItem{Bussiness objects}
+        %  {Designed and implemented a customized SAP Business Objects system to meet specific client requirements using ReactJS, enhancing data reporting and analysis capabilities.}
+          
                        \resumeItemListEnd
 
     \resumeSubheading
       {Axelta Systems}{Hyderabad, India}
-      {Software Engineer Intern}{Summer 2017 and 2018}
+     {Software Engineer Intern}{Summer 2017 and 2018}
       \resumeItemListStart
         \resumeItem{Internet of Things}
-          {Developed a Python script on a Raspberry PI platform to ensure 100\% data retrieval from various sensors.}
+        {Developed a Python script on a Raspberry PI platform to ensure 100\% data retrieval from various sensors.}
         \resumeItem{Cloud Dashboard}
           {Created a cloud dashboard for real-time data integration, processing, and analysis resulting 50\% reduction in storage costs.}
-      \resumeItemListEnd
+     \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
@@ -167,18 +207,22 @@
   \resumeSubItem{\href{https://github.com/ramchandra3101/Cyberinfrastructure-competition}{Cyberinfrastructure Competition-1st Prize}}
       {Achieved first place in the Cyberinfrastructure Competition with a cross-disciplinary team for predicting Citibike usage in Manhattan using a GRU model and GIS analysis.}
     \resumeSubItem{\href{https://github.com/ramchandra3101/NFLoutcomes-prediction}{NFL Outcome Prediction}}
-          {Crafted a Python ML model for NFL predictions, enhancing accuracy by 40\% with enriched player data from two decades.}
+          {Crafted a  ML model for NFL predictions, enhancing accuracy by 40\% with enriched player data from two decades.}
     \resumeSubItem{KLAD(E-commerce clothing website)}
       {Built a MERN stack-based e-commerce website for the apparel startup KLAD, enhancing the online shopping experience.}
     \resumeSubItem{Student Mental Health Analysis}
       {Led a project to predict UConn students' mental health outcomes based on social media usage and facilitating support services.}
+   \resumeSubItem{US pollution prediction using AQI}
+    {Developed a predictive model utilizing deep learning to forecast US pollution levels for individual counties based on the Air Quality Index, achieving a commendable 70\% accuracy rate.}
   \resumeSubHeadingListEnd
 
 %
 %--------PROGRAMMING SKILLS------------
 \section{Technical Skills}
  \resumeSubHeadingListStart
-     \resumeSubItem{\textbf{Languages}}{Python, Javascript, NoSQL, Java}\\
+     \resumeSubItem{\textbf{Languages}}{ C++, C , Python, Javascript, NoSQL, Java, Assembly}\\
+    
+     %\resumeSubItem{\textbf{Simulation Softwares}}{MATLAB Simulink}
      \resumeSubItem{\textbf{Web Developemnt}}{React, Node,HTML/CSS}\\
      \resumeSubItem{\textbf{Version Control}}{Git, GitHub}\\
     % \resumeSubItem{\textbf{Containerization}}{Docker, Kubernetes}\\
@@ -186,12 +230,12 @@
      \resumeSubItem{\textbf{Database \& Cloud}}{MySQL, Oracle, MongoDB}
   \resumeSubHeadingListEnd
 %--------Leadership------------
-\section{Leadership}
-\resumeSubHeadingListStart
-\resumeSubItem{Smart India Hackathon 2017}
-      {Managed a team of 25, mentoring in designing and drafting requirements for the national-level hackathon(Student's Voice) at KL University.}
+%\section{Leadership}
+%\resumeSubHeadingListStart
+%\resumeSubItem{Smart India Hackathon 2017}
+   %   {Managed a team of 25, mentoring in designing and drafting requirements for the national-level hackathon(Student's Voice) at KL University.}
 
- \resumeSubHeadingListEnd
+% \resumeSubHeadingListEnd
  
 %-------------------------------------------
 \end{document}
