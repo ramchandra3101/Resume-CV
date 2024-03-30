@@ -68,7 +68,7 @@
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+     {\small#3} &{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -76,15 +76,15 @@
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-      \textit{\small#5} & \textit{\small #6} \\
+      {\small#3} & \textit{\small #4} \\
+      {\small#5} & \textit{\small #6} \\
     \end{tabular*}\vspace{-5pt}
 }
 
 
 \newcommand{\resumeSubSubheading}[2]{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      {\small#1} & {\small #2} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -117,7 +117,7 @@
     \resumeSubheadingTop
       {University of Connecticut}{Storrs, CT}
       {Master of Engineering in Computer Science}{Aug. 2023 -- Dec. 2024}
-      {\textbf{Coursework:} Algorithms \& Complexity, Data Mining, Big Data Analytics}{GPA: 3.5}
+      {\textbf{Coursework:} Machine Learning, Computer Networks, Algorithms \& Complexity}{GPA: 3.2}
     \resumeSubheadingTop
       {Koneru Lakshmaiah (Deemed to be) University}{Vijayawada India}
       {Bachelor of Engineering in Electrical and Electronics}{Aug. 2015-- Jun. 2019}
@@ -126,34 +126,39 @@
   \resumeSubHeadingListEnd
 
 
+
+
+
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Tata Consultancy Services}{Hyderabad, India}
-      {Software Engineer}{Jun. 2022 - July. 2023}
+    {Full stack developer(Java)}{Jun. 2022 - July. 2023}
+   {Tata Consultancy Services: \textbf{Java, Python, Angular, Kubernetes, CI/CD, Javascript, NodeJS}}{Hyderabad, India}
+      
       \resumeItemListStart
-              
-        \resumeItem{Reusable Components}
-        {Increased website speed and performance by 40\% by developing reusable components with React for 10+ company websites.}
+                 \resumeItem{Ticket Booking App}
+         {Designed and implemented a web and mobile application to book online tickets for SNCB-Belgian rail using AngularJS, driving a 40\% increase in user engagement.}
+       
+      \resumeItem{Monitoring System} 
+         {Achieved 75\% reduction in monitoring time by architecting an advanced Python-based health check monitoring system for over 30 SAP production environments.}
+ 
+         \resumeItem{Performance Tuning}
+         {Fine-tuned system efficiency by addressing performance bottlenecks, achieving a marked decrease in execution time for over 100 background processes.}        
         
-        \resumeItem{API}
-        {Developed app integrations using REST and SOAP APIs for features like Google Maps, social media logins, payment processors, and other services.}
-        
-        \resumeItem{Web Development}
-        {Achieved 100\% client satisfaction by designing website structures and page layouts that precisely met user requirements.}
+         \resumeItem{Cybersecurity}
+       {Implemented an algorithm for detecting components at risk of cyber attacks, enhancing system security by identifying vulnerabilities.}
 
-         \resumeItem{Single page app}
-         {Transformed a multi-page user experience into a single-page application (SPA), boosting customer engagement by 10\% through seamless navigation and reduced loading times.}
-       
-     %   \resumeItem{ReactJS}
-       %   {Translated designs \& wireframes into high quality code and wrote application inetrface code via javascript following ReactJS workflows}
-          
-       
+        \resumeItem{Changes Movement}
+          {Developed a streamlined process for the efficient transfer of change objects across development, testing, QA, and production environments, enhancing project agility and deployment speed by 40\%.}
+        %\resumeItem{System installation}
+      % {Launched a Linux-based print server for Merck Animal Health's Amsterdam site, seamlessly integrating over 100 printers with SAP in collaboration with Hewlett Packard.}
+        
         
        
       \resumeItemListEnd
+      
       
 % --------Multiple Positions Heading------------
 %    \resumeSubSubheading
@@ -166,50 +171,48 @@
 %-------------------------------------------
 
     \resumeSubheading
-      {Cognizant Technology Solutions}{Chennai, India}
-      {Software Engineer}{Jul. 2019 - May. 2022}
+       {Full Stack developer}{Jul. 2019 - May. 2022}
+      {Cognizant Technology Solutions: \textbf{ReactJS, Javascript, Linux, SQL}}{Chennai, India}
+     
       \resumeItemListStart
-      \resumeItem{Monitoring System}
-         {Achieved 75\% reduction in monitoring time by architecting an advanced Python-based health check monitoring system for over 30 SAP production environments.}
-        
-         
- 
-         \resumeItem{Performance Tuning}
-         {Fine-tuned system efficiency by addressing performance bottlenecks, achieving a marked decrease in execution time for over 100 background processes.}        
-        
-         \resumeItem{Cybersecurity}
-       {Implemented an algorithm for detecting components at risk of cyber attacks, enhancing system security by identifying vulnerabilities.}
+      
+     
+          \resumeItem{Reusable Components}
+        {Achieved a 40\% enhancement in website speed and performance across a portfolio of 10+ company websites by leveraging React to create reusable components.}
+        \resumeItem{Web Development}
+        {Attained 100\% client satisfaction by designing website structures and page layouts that precisely met user requirements.}
 
-        \resumeItem{Changes Movement}
-          {Developed a streamlined process for the efficient transfer of change objects across development, testing, QA, and production environments, enhancing project agility and deployment speed by 40\%.}
-        \resumeItem{System installation}
-         {Launched a Linux-based print server for Merck Animal Health's Amsterdam site, seamlessly integrating over 100 printers with SAP in collaboration with Hewlett Packard.}
-     %  \resumeItem{Bussiness objects}
-        %  {Designed and implemented a customized SAP Business Objects system to meet specific client requirements using ReactJS, enhancing data reporting and analysis capabilities.}
+         \resumeItem{Single page app}
+         {Transformed a multi-page user experience into a single-page application (SPA), boosting customer engagement by 10\% through seamless navigation and reduced loading times.}
+       \resumeItem{API}
+        {Developed app integrations using REST and SOAP APIs for features like Google Maps, social media logins, payment processors, and other services.}
+        \resumeItem{ReactJS}
+          {Transformed design concepts and wireframes into high-caliber code, crafting intuitive application interfaces using JavaScript within the ReactJS framework, and adhering to established workflows.}
           
                        \resumeItemListEnd
 
-    \resumeSubheading
-      {Axelta Systems}{Hyderabad, India}
-     {Software Engineer Intern}{Summer 2017 and 2018}
-      \resumeItemListStart
+   \resumeSubheading
+    {Software Engineer Intern}{Summer 2017 and 2018}
+    {Axelta Systems}{Hyderabad, India}
+     
+   \resumeItemListStart
         \resumeItem{Internet of Things}
-        {Developed a Python script on a Raspberry PI platform to ensure 100\% data retrieval from various sensors.}
+       {Developed a Python script on a Raspberry PI platform to ensure 100\% data retrieval from various sensors.}
         \resumeItem{Cloud Dashboard}
-          {Created a cloud dashboard for real-time data integration, processing, and analysis resulting 50\% reduction in storage costs.}
-     \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
+         {Created a cloud dashboard for real-time data integration, processing, and analysis resulting 50\% reduction in storage costs.}
+   
+    \resumeItemListEnd
+ \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-  \resumeSubItem{\href{https://github.com/ramchandra3101/Cyberinfrastructure-competition}{Cyberinfrastructure Competition-1st Prize}}
-      {Achieved first place in the Cyberinfrastructure Competition with a cross-disciplinary team for predicting Citibike usage in Manhattan using a GRU model and GIS analysis.}
+  \resumeSubItem{\href{https://github.com/ramchandra3101/Cyberinfrastructure-competition}{NSF Cyberinfrastructure Competition-1st Prize}}
+      {Achieved first place in the UCONN Cyberinfrastructure Competition with a cross-disciplinary team for predicting Citibike usage in Manhattan using a GRU model and GIS analysis.}
     \resumeSubItem{\href{https://github.com/ramchandra3101/NFLoutcomes-prediction}{NFL Outcome Prediction}}
-          {Crafted a  ML model for NFL predictions, enhancing accuracy by 40\% with enriched player data from two decades.}
-    \resumeSubItem{KLAD(E-commerce clothing website)}
-      {Built a MERN stack-based e-commerce website for the apparel startup KLAD, enhancing the online shopping experience.}
+          {Crafted an ML model for NFL predictions, enhancing accuracy by 40\% with enriched player data from two decades.}
+   % \resumeSubItem{KLAD(E-commerce clothing website)}
+     % {Built a MERN stack-based e-commerce website for the apparel startup KLAD, enhancing the online shopping experience.}
     \resumeSubItem{Student Mental Health Analysis}
       {Led a project to predict UConn students' mental health outcomes based on social media usage and facilitating support services.}
    \resumeSubItem{US pollution prediction using AQI}
@@ -220,14 +223,14 @@
 %--------PROGRAMMING SKILLS------------
 \section{Technical Skills}
  \resumeSubHeadingListStart
-     \resumeSubItem{\textbf{Languages}}{Python, Javascript, NoSQL, Java, C++, C }\\
+     \resumeSubItem{\textbf{Languages}}{ Java, Typescript, Javascript, NoSQL}\\
     
      %\resumeSubItem{\textbf{Simulation Softwares}}{MATLAB Simulink}
-     \resumeSubItem{\textbf{Web Developemnt}}{React, Node,HTML/CSS}\\
+     \resumeSubItem{\textbf{Web Development}}{Angular, Node, HTML/CSS}\\
      \resumeSubItem{\textbf{Version Control}}{Git, GitHub}\\
     % \resumeSubItem{\textbf{Containerization}}{Docker, Kubernetes}\\
      \resumeSubItem{\textbf{Python Libraries}}{Pandas, Scikit-Learn, NumPy, Tensorflow}\\
-     \resumeSubItem{\textbf{Database \& Cloud}}{MySQL, Oracle, MongoDB}
+     \resumeSubItem{\textbf{Database \& Cloud}}{MySQL, Oracle, MongoDB, AWS}
   \resumeSubHeadingListEnd
 %--------Leadership------------
 %\section{Leadership}
